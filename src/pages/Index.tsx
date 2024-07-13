@@ -1,20 +1,28 @@
-import Dropdown from 'react-bootstrap/Dropdown';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import products from '../../data/products.json';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function Index() {
   return (
     <div>
-      <div>Index</div>
-      <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Dropdown Button
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+      <h1>Products</h1>
+      <CardGroup className="gap-4">
+        {products &&
+          products.map((product) => (
+            <Card className="w-25" key={product.id}>
+              <Card.Img variant="top" src={`../../img/${product.img}`} />
+              <Card.Body>
+                <Card.Title>{product.title}</Card.Title>
+                <div>
+                  {product.price} {product.currency}
+                </div>
+                <Card.Text>{product.description}</Card.Text>
+                <Button variant="primary">Add to Card</Button>
+              </Card.Body>
+            </Card>
+          ))}
+      </CardGroup>
     </div>
   );
 }
