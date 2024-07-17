@@ -1,29 +1,38 @@
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import products from '../../data/products.json';
-import CardGroup from 'react-bootstrap/CardGroup';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import AddProduct from '../components/AddCartItem';
+import Cart from '../components/Cart';
 
 function Index() {
   return (
-    <div>
-      <h1>Products</h1>
-      <CardGroup className="gap-4">
-        {products &&
-          products.map((product) => (
-            <Card className="w-25" key={product.id}>
-              <Card.Img variant="top" src={`../../img/${product.img}`} />
-              <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
-                <div>
-                  {product.price} {product.currency}
-                </div>
-                <Card.Text>{product.description}</Card.Text>
-                <Button variant="primary">Add to Card</Button>
-              </Card.Body>
-            </Card>
-          ))}
-      </CardGroup>
-    </div>
+    <Row sm={2}>
+      <Col className="w-75">
+        <h1>Products</h1>
+        <Row sm={2} md={3} lg={4}>
+          {products &&
+            products.map((product) => (
+              <Col className="g-4" key={product.id}>
+                <Card style={{ minWidth: '200px' }}>
+                  <Card.Img variant="top" src={`../../img/${product.img}`} />
+                  <Card.Body>
+                    <Card.Title>{product.name}</Card.Title>
+                    <div>
+                      {product.price} {product.currency}
+                    </div>
+                    <Card.Text>{product.description}</Card.Text>
+                    <AddProduct product={product} />
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+        </Row>
+      </Col>
+      <Col className="w-25">
+        <Cart />
+      </Col>
+    </Row>
   );
 }
 

@@ -1,26 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Product 1",
-    "description": "No. 1 Product",
-    "price": "10",
+    "name": "Wärmepumpe",
+    "description": "No. 1 Wärmepumpe",
+    "price": 5100,
     "currency": "€",
-    "img": "product_1.jpg"
+    "img": "waermepumpe.jpg"
   },
   {
     "id": 2,
-    "title": "Product 2",
-    "description": "No. 2 Product",
-    "price": "12",
+    "name": "Windrad",
+    "description": "Leistungsstärkstes Windrad der Welt",
+    "price": 120000,
     "currency": "€",
-    "img": "product_2.jpg"
+    "img": "windrad.jpg"
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "description": "No. 3 Product",
-    "price": "13",
+    "name": "Solaranlage",
+    "description": "Beste Solaranlage ever",
+    "price": 33000,
     "currency": "€",
-    "img": "product_3.jpg"
+    "img": "solaranlage.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Wechselrichter",
+    "description": "Mehr wechseln geht nicht.",
+    "price": 3000,
+    "currency": "€",
+    "img": "wechselrichter.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Stromturbine",
+    "description": "Mehr power geht nicht.",
+    "price": 50000,
+    "currency": "€",
+    "img": "stromturbine.jpg"
   }
 ]

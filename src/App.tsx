@@ -10,7 +10,7 @@ function App() {
   return (
     <Container>
       <Row className="flex-column min-vh-100 gap-3">
-        <Col as="header" className="text-center flex-grow-0 p-3">
+        <Col as="header" className="flex-grow-0 p-3">
           <Header />
         </Col>
         <Col as="main" className="text-center bg-light p-3">

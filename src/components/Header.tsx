@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <>
-      <div>Header</div>
-    </>
+    <div className="flex flex-row">
+      Header Produkte und Preise sind fiktiv und können nicht bestellt werden.
+    </div>
   );
 };
 
