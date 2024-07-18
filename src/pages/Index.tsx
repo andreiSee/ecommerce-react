@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import products from '../../data/products.json';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import AddProduct from '../components/AddCartItem';
+import AddCartItem from '../components/AddCartItem';
 import Cart from '../components/Cart';
 
 function Index() {
@@ -10,7 +10,7 @@ function Index() {
     <Row sm={2}>
       <Col className="w-75">
         <h1>Products</h1>
-        <Row sm={2} md={3} lg={4}>
+        <Row md={2} lg={3}>
           {products &&
             products.map((product) => (
               <Col className="g-4" key={product.id}>
@@ -22,7 +22,7 @@ function Index() {
                       {product.price} {product.currency}
                     </div>
                     <Card.Text>{product.description}</Card.Text>
-                    <AddProduct product={product} />
+                    <AddCartItem product={product} />
                   </Card.Body>
                 </Card>
               </Col>

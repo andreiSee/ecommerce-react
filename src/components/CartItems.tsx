@@ -12,17 +12,19 @@ const CartItems = () => {
       {cartItems.map((cartItem: CartItem) => (
         <ListGroup.Item
           as="li"
-          // Todo
-          key={cartItem.id}
+          key={cartItem.details.id}
           className="d-flex justify-content-between"
         >
-          <span>
-            {cartItem.details.id} {cartItem.details.name}{' '}
-            {cartItem.details.price} {cartItem.details.currency}
-          </span>
+          <div className="d-flex flex-column">
+            <div className=" text-start">{cartItem.details.name}</div>
+            <div className=" text-start">
+              {cartItem.details.price} {cartItem.details.currency}
+            </div>
+          </div>
           <Button
             variant="secondary"
             size="sm"
+            className="align-self-start"
             onClick={() => dispatch(removeCartItem(cartItem.id))}
           >
             X

@@ -12,13 +12,18 @@ const cartSlice = createSlice({
       const currentCartItems = current(state.cartItems);
 
       // Only add product if not already in cart
-      const inCart = currentCartItems.filter((item) => {
-        return item.details.id === action.payload.id;
-      });
+      const inCart = currentCartItems.filter(
+        (item) => item.details.id === action.payload.id
+      );
 
       if (inCart.length === 0) {
+        const cartItemIds = currentCartItems
+          .map((cartItem) => cartItem.id)
+          .sort();
+        const maxCartItemId = cartItemIds[cartItemIds.length - 1] || 0;
+
         state.cartItems.push({
-          id: state.cartItems.length + 1,
+          id: maxCartItemId + 1,
           details: action.payload,
         });
       }
