@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addCartItem } from '../slices/cartItemsSlice';
+import { addCartItem } from '../slices/cartSlice';
 import Button from 'react-bootstrap/Button';
 
 const AddCartItem = ({ product }: { product: Product }) => {

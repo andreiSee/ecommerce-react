@@ -1,12 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { removeCartItem } from '../slices/cartItemsSlice';
+import { removeCartItem } from '../slices/cartSlice';
 import { Button, ListGroup } from 'react-bootstrap';
 import { RootState } from '../store';
 
 const CartItems = () => {
-  const cartItems = useSelector(
-    (state: RootState) => state.cartItems.cartItems
-  );
+  const cartItems = useSelector((state: RootState) => state.cart.cartItems);
   const dispatch = useDispatch();
 
   return (
@@ -14,6 +12,7 @@ const CartItems = () => {
       {cartItems.map((cartItem: CartItem) => (
         <ListGroup.Item
           as="li"
+          // Todo
           key={cartItem.id}
           className="d-flex justify-content-between"
         >
