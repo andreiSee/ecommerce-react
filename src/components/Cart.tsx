@@ -18,12 +18,12 @@ function Cart() {
 
   return (
     <>
-      <h1>Warenkorb</h1>
+      <h2>Warenkorb</h2>
       <div className="pt-4">
         <CartItems />
         {cartSum !== 0 && (
           <Container className="text-start p-3 bg-body-secondary rounded-2 mt-2">
-            Summe: <span className="fw-bold">{cartSum}</span>
+            Summe: <span className="fw-bold">{cartSum} €</span>
           </Container>
         )}
         {cartSum === 0 && <div>Der Warenkorb ist leer.</div>}

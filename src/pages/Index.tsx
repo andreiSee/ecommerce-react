@@ -7,14 +7,17 @@ import Cart from '../components/Cart';
 
 function Index() {
   return (
-    <Row sm={2}>
-      <Col className="w-75">
-        <h1>Products</h1>
-        <Row md={2} lg={3}>
+    <Row className="flex-sm-row-reverse">
+      <Col sm={4} md={3}>
+        <Cart />
+      </Col>
+      <Col sm={8} md={9} className="mt-3 mt-sm-0">
+        <h2>Products</h2>
+        <Row sm={1} md={2} lg={3}>
           {products &&
             products.map((product) => (
-              <Col className="g-4" key={product.id}>
-                <Card style={{ minWidth: '200px' }}>
+              <Col className="g-4 mw-200" key={product.id}>
+                <Card className="h-100">
                   <Card.Img variant="top" src={`../../img/${product.img}`} />
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
@@ -28,9 +31,6 @@ function Index() {
               </Col>
             ))}
         </Row>
-      </Col>
-      <Col className="w-25">
-        <Cart />
       </Col>
     </Row>
   );

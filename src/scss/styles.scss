@@ -1,6 +1,31 @@
-// $enable-grid-classes: false;
-// $enable-cssgrid: true;
+// https://github.com/twbs/examples/blob/main/vite/src/scss/styles.scss
+@import './variables.scss';
+@import './utilities';
+// TODO optimize imports
+@import 'bootstrap/scss/bootstrap';
 
 body {
   overscroll-behavior: none;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
+
+  & li {
+    list-style-type: none;
+  }
 }

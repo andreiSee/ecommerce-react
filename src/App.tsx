@@ -9,11 +9,11 @@ import Row from 'react-bootstrap/Row';
 function App() {
   return (
     <Container>
-      <Row className="flex-column min-vh-100 gap-3">
-        <Col as="header" className="flex-grow-0 p-3">
+      <Row className="flex-column min-vh-100 gap-4">
+        <Col as="header" className="flex-grow-0 pt-1">
           <Header />
         </Col>
-        <Col as="main" className="text-center bg-light p-3">
+        <Col as="main" className="text-center bg-light p-3 rounded-4">
           <Index />
         </Col>
         <Col as="footer" className="text-center flex-grow-0 p-3">
