@@ -12,7 +12,7 @@ const techStackList = [
 const Header = () => {
   return (
     <>
-      <div className="text-center">
+      <div className="legal">
         Produkte und Preise sind fiktiv und können nicht bestellt werden.
       </div>
       <h1 className="mt-2 mb-3 text-center">
