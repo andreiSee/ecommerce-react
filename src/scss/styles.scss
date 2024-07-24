@@ -1,11 +1,15 @@
 // https://github.com/twbs/examples/blob/main/vite/src/scss/styles.scss
 @import './variables.scss';
 @import './utilities';
-// TODO optimize imports
+
 @import 'bootstrap/scss/bootstrap';
 
 body {
   overscroll-behavior: none;
+}
+
+a {
+  color: black;
 }
 
 .tech-stack {
@@ -28,4 +32,15 @@ body {
   & li {
     list-style-type: none;
   }
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--bs-gray-600);
+}
+
+.imprint,
+.data-pd {
+  text-align: left;
 }
