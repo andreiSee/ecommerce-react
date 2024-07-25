@@ -14,7 +14,7 @@ function IndexPage() {
           <Cart />
         </Col>
         <Col sm={8} md={9} className="mt-3 mt-sm-0">
-          <h2>Products</h2>
+          <h2>Produkte</h2>
           <Row sm={1} md={2} lg={3}>
             {products &&
               products.map((product) => (

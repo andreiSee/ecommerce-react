@@ -1,4 +1,5 @@
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const techStackList = [
   { title: 'React', url: 'https://react.dev/' },
@@ -15,9 +16,11 @@ const Header = () => {
       <div className="legal">
         Produkte und Preise sind fiktiv und können nicht bestellt werden.
       </div>
-      <h1 className="mt-2 mb-3 text-center">
-        <span className="text-black-50">Demo:</span> Warenkorb
-      </h1>
+      <Link to={'/'} className="text-decoration-none">
+        <h1 className="mt-2 mb-3 text-center">
+          <span className="text-black-50">Demo:</span> Warenkorb
+        </h1>
+      </Link>
       <div className="tech-stack">
         <h3 className="me-2 mb-0 align-self-center">Tech Stack</h3>
         <a

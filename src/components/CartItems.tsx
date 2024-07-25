@@ -1,11 +1,11 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useAppSelector, useAppDispatch } from '../hooks';
 import { removeCartItem } from '../slices/cartSlice';
 import { Button, ListGroup } from 'react-bootstrap';
 import { RootState } from '../store';
 
 const CartItems = () => {
-  const cartItems = useSelector((state: RootState) => state.cart.cartItems);
-  const dispatch = useDispatch();
+  const cartItems = useAppSelector((state: RootState) => state.cart.cartItems);
+  const dispatch = useAppDispatch();
 
   return (
     <ListGroup as="ul">
