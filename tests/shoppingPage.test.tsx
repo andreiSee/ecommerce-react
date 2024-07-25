@@ -1,5 +1,5 @@
 import { it, expect, describe } from 'vitest';
-import { renderWithProviders } from '../src/utilities/test-utils';
+import { renderWithProviders } from '../src/utilities/testUtils';
 import IndexPage from '../src/pages/IndexPage';
 import { screen } from '@testing-library/react';
 
