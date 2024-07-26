@@ -15,14 +15,15 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
   store?: AppStore;
 }
 
-export function renderWithProviders(ui: React.ReactElement) {
-  const {
+export function renderWithProviders(
+  ui: React.ReactElement,
+  {
     preloadedState = {},
     // Automatically create a store instance if no store was passed in
     store = setupStore(preloadedState),
     ...renderOptions
-  }: ExtendedRenderOptions = {};
-
+  }: ExtendedRenderOptions = {}
+) {
   function Wrapper({ children }: PropsWithChildren): JSX.Element {
     return (
       <Provider store={store}>

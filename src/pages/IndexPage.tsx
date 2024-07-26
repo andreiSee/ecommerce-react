@@ -19,10 +19,10 @@ function IndexPage() {
             {products &&
               products.map((product) => (
                 <Col className="g-4 mw-200" key={product.id}>
-                  <Card className="h-100">
+                  <Card as="article" className="h-100">
                     <Card.Img variant="top" src={`../../img/${product.img}`} />
                     <Card.Body>
-                      <Card.Title>{product.name}</Card.Title>
+                      <Card.Title as="h3">{product.name}</Card.Title>
                       <div>
                         {product.price} {product.currency}
                       </div>

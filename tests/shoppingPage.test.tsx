@@ -10,8 +10,7 @@ describe('Shopping Page', () => {
   ])('should display the $headline section.', ({ searchFor }) => {
     renderWithProviders(<IndexPage />);
 
-    const h2List = screen.getAllByRole('heading', { level: 2 });
-    const hasHeadline = h2List.find((h2) => h2.textContent?.match(searchFor));
-    expect(hasHeadline).toBeTruthy();
+    const heading = screen.getByRole('heading', { level: 2, name: searchFor });
+    expect(heading).toBeInTheDocument();
   });
 });

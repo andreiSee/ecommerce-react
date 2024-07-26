@@ -17,7 +17,7 @@ function Cart() {
   }, [cartItems]);
 
   return (
-    <>
+    <div data-testid="cart">
       <h2>Warenkorb</h2>
       <div className="pt-4">
         <CartItems />
@@ -28,7 +28,7 @@ function Cart() {
         )}
         {cartSum === 0 && <div>Der Warenkorb ist leer.</div>}
       </div>
-    </>
+    </div>
   );
 }
 
