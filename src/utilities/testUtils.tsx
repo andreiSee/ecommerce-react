@@ -8,6 +8,9 @@ import { setupStore } from '../store';
 
 import { BrowserRouter } from 'react-router-dom';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { prettyFormat } from '@testing-library/dom/types/pretty-dom';
+
 // This type interface extends the default options for render from RTL, as well
 // as allows the user to specify other things such as initialState, store.
 interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {

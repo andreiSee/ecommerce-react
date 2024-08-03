@@ -56,6 +56,9 @@ describe('Cart', () => {
     const cartItems = cart.querySelectorAll('li');
     const removeFromCartBtn = cartItems[0].querySelector('button');
 
+    // console.log('cart: ', cart);
+    // screen.debug(screen.getByTestId('cart'));
+
     expect(cartItems.length).toEqual(1);
     expect(cartItems[0]).toHaveTextContent(/wärmepumpe/i);
 
