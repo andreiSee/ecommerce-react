@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <div className="legal">
-        Produkte und Preise sind fiktiv und können nicht bestellt werden.
+        Produkte und Preise sind frei erfunden und können nicht bestellt werden.
       </div>
       <Link to={'/'} className="text-decoration-none">
         <h1 className="mt-2 mb-3 text-center">

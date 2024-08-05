@@ -1,0 +1,95 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+$body-bg: #ccc;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+
+// 6. a) Optionally include any other parts as needed
+// @import '../node_modules/bootstrap/scss/utilities';
+// @import '../node_modules/bootstrap/scss/reboot';
+// @import '../node_modules/bootstrap/scss/type';
+// @import '../node_modules/bootstrap/scss/images';
+// @import '../node_modules/bootstrap/scss/containers';
+// @import '../node_modules/bootstrap/scss/grid';
+// @import '../node_modules/bootstrap/scss/helpers';
+// ...
+
+// 6. b) Include the full import stack
+@import 'bootstrap/scss/bootstrap';
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import '../node_modules/bootstrap/scss/utilities/api';
+
+// 8. Add additional custom code here
+
+// Add custom utility classes
+$utilities: map-merge(
+  $utilities,
+  (
+    'width min fix': (
+      property: min-width,
+      class: mw,
+      values: (
+        200: 200px,
+      ),
+    ),
+  )
+);
+
+// Add custom scss
+body {
+  overscroll-behavior: none;
+}
+
+a {
+  color: black;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
+
+  & li {
+    list-style-type: none;
+  }
+}
+
+header .legal {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--bs-gray-600);
+}
+
+.imprint,
+.data-pd {
+  text-align: left;
+}
