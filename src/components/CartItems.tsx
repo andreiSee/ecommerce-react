@@ -8,7 +8,7 @@ const CartItems = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <ListGroup as="ul">
+    <ListGroup as="ul" className="gap-1">
       {cartItems.map((cartItem: CartItem) => (
         <ListGroup.Item
           as="li"
