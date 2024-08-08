@@ -7,6 +7,7 @@ type Product = {
   price: number;
   currency: string;
   img: string;
+  imgMobile: string;
 };
 
 type CartItem = {

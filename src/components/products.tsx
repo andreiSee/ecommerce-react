@@ -13,11 +13,14 @@ function Products() {
           products.map((product) => (
             <Col className="g-4 mw-200" key={product.id}>
               <Card as="article" className="h-100">
-                <Card.Img
-                  variant="top"
-                  src={`/${product.img}`}
-                  alt={product.name}
-                />
+                <picture>
+                  <source srcSet={`/${product.imgMobile} 400w`} />
+                  <Card.Img
+                    variant="top"
+                    src={`/${product.img} 1890w`}
+                    alt={product.name}
+                  />
+                </picture>
                 <Card.Body>
                   <Card.Title as="h3">{product.name}</Card.Title>
                   <div>
