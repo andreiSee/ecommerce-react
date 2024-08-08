@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import products from '../../data/products-sneaker.json';
-import AddCartItem from '../components/AddCartItem';
+import AddCartItem from './AddCartItem';
 
 function Products() {
   return (
