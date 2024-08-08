@@ -22,7 +22,7 @@ const Header = () => {
         </h1>
       </Link>
       <div className="tech-stack">
-        <h3 className="me-2 mb-0 align-self-center">Tech Stack</h3>
+        <h1 className="me-2 mb-0 align-self-center">Tech Stack</h1>
         <a
           href="https://github.com/andreiSee/form-registration"
           target="_blank"

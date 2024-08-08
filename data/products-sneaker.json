@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Ocean classic",
+    "name": "Ocean Classic",
     "img": "img/products/sneakers/sneaker-1.webp",
     "teaser": "Den Ozean immer zu Füßen! Tauche ein in den zeitlosen Stil des Ocean Classic. Du kennst keine Grenzen und bist frei.",
     "price": 126,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Ocean new",
+    "name": "Ocean New",
     "img": "img/products/sneakers/sneaker-2.webp",
     "teaser": "Selbstbewuswt und frisch, wie du!",
     "price": 112,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "Ocean sparkling",
+    "name": "Ocean Sparkling",
     "img": "img/products/sneakers/sneaker-3.webp",
     "teaser": "Du bist der Glanz des Meeres. Der Ocean Sparkling kombiniert stilvolle Eleganz mit einem einzigartigen, leuchtenden Design, das jedes Outfit zum Strahlen bringt.",
     "price": 98,
