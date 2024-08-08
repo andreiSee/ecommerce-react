@@ -2,7 +2,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import App from '../App';
 import Cart from '../components/Cart';
-import Products from '../components/temp-products';
+import Products from '../components/Products';
 
 function IndexPage() {
   return (
