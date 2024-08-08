@@ -3,7 +3,7 @@
 type Product = {
   id: number;
   name: string;
-  description: string;
+  teaser: string;
   price: number;
   currency: string;
   img: string;

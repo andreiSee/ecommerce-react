@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import products from '../../data/products.json';
+import products from '../../data/products-sneaker.json';
 import AddCartItem from '../components/AddCartItem';
 
 function Products() {
@@ -13,13 +13,13 @@ function Products() {
           products.map((product) => (
             <Col className="g-4 mw-200" key={product.id}>
               <Card as="article" className="h-100">
-                <Card.Img variant="top" src={`/img/${product.img}`} />
+                <Card.Img variant="top" src={`/${product.img}`} />
                 <Card.Body>
                   <Card.Title as="h3">{product.name}</Card.Title>
                   <div>
                     {product.price} {product.currency}
                   </div>
-                  <Card.Text>{product.description}</Card.Text>
+                  <Card.Text>{product.teaser}</Card.Text>
                   <AddCartItem product={product} />
                 </Card.Body>
               </Card>
