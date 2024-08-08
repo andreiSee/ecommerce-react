@@ -18,7 +18,7 @@ describe('Cart', () => {
 
     const heading = screen.getByRole('heading', {
       level: 3,
-      name: /wärmepumpe/i,
+      name: /ocean classic/i,
     }).parentNode;
     const addToCartBtn = heading?.querySelector('button');
 
@@ -28,7 +28,7 @@ describe('Cart', () => {
     const cartItems = cart.querySelectorAll('li');
 
     expect(cartItems.length).toEqual(1);
-    expect(cartItems[0]).toHaveTextContent(/wärmepumpe/i);
+    expect(cartItems[0]).toHaveTextContent(/ocean classic/i);
   });
 
   it('should remove the one item deleted of the cart', async () => {
@@ -39,11 +39,11 @@ describe('Cart', () => {
             id: 1,
             details: {
               id: 1,
-              name: 'Wärmepumpe',
-              description: 'No. 1 Wärmepumpe',
-              price: 5100,
+              name: 'Ocean Classic',
+              teaser: 'Den Ozean immer zu Füßen!',
+              price: 126,
               currency: '€',
-              img: 'waermepumpe.jpg',
+              img: 'sneaker-1.webp',
             },
           },
         ],
@@ -60,7 +60,7 @@ describe('Cart', () => {
     // screen.debug(screen.getByTestId('cart'));
 
     expect(cartItems.length).toEqual(1);
-    expect(cartItems[0]).toHaveTextContent(/wärmepumpe/i);
+    expect(cartItems[0]).toHaveTextContent(/ocean classic/i);
 
     if (removeFromCartBtn) await user.click(removeFromCartBtn);
 
