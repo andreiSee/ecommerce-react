@@ -13,7 +13,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
 
   & ul {
     display: flex;
@@ -34,6 +34,11 @@ a {
 header .legal {
   text-align: center;
   font-size: 0.75rem;
+  background-color: var(--bs-gray-700);
+  color: var(--bs-gray-100);
+  padding: 2px 0;
+  border-end-start-radius: 10px;
+  border-end-end-radius: 10px;
 }
 
 footer .copyright {

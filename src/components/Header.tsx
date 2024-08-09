@@ -17,12 +17,12 @@ const Header = () => {
         Produkte und Preise sind frei erfunden und können nicht bestellt werden.
       </div>
       <Link to={'/'} className="text-decoration-none">
-        <h1 className="mt-2 mb-3 text-center">
+        <h1 className="mt-4 mb-4 text-center">
           <span className="text-black-50">Demo:</span> Warenkorb
         </h1>
       </Link>
       <div className="tech-stack">
-        <h1 className="me-2 mb-0 align-self-center">Tech Stack</h1>
+        <h2 className="me-2 mb-0">Tech Stack</h2>
         <a
           href="https://github.com/andreiSee/form-registration"
           target="_blank"
