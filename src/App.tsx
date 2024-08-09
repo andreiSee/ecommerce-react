@@ -1,15 +1,15 @@
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 
 function App({ children }: { children: React.ReactNode }) {
   return (
     <Container>
       <Row className="flex-column min-vh-100 gap-4">
-        <Col as="header" className="flex-grow-0">
+        <Col as="header" className="flex-grow-0 pb-4">
           <Header />
         </Col>
         <Col as="main" className="text-center bg-light p-3 rounded-4">

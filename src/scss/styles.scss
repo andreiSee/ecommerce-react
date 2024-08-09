@@ -1,6 +1,6 @@
-// Add custom scss
-@import './custom.scss';
+// Custom scss
 
+// Global
 body {
   overscroll-behavior: none;
 }
@@ -9,45 +9,65 @@ a {
   color: black;
 }
 
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  & ul {
+// Header
+header {
+  .legal {
+    text-align: center;
+    font-size: 0.75rem;
+    background-color: var(--bs-gray-700);
+    color: var(--bs-gray-100);
+    padding: 2px 0;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+  }
+  .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 0;
-    margin-top: 10px;
-    @include media-breakpoint-up(lg) {
-      margin-top: 0;
+    justify-content: center;
+    align-items: center;
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 0;
+      margin-top: 10px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+    }
+
+    & li {
+      list-style-type: none;
     }
   }
+}
 
-  & li {
-    list-style-type: none;
+// Main
+main {
+  .shopping-area {
+    display: flex;
+    flex-direction: column-reverse;
+    @include media-breakpoint-up(lg) {
+      display: grid;
+      grid-template-columns: 0.7fr 0.3fr;
+      @include media-breakpoint-up(xl) {
+        grid-template-columns: 0.75fr 0.25fr;
+      }
+    }
   }
 }
 
-header .legal {
-  text-align: center;
-  font-size: 0.75rem;
-  background-color: var(--bs-gray-700);
-  color: var(--bs-gray-100);
-  padding: 2px 0;
-  border-end-start-radius: 10px;
-  border-end-end-radius: 10px;
-}
+// Footer
+footer {
+  .copyright {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--bs-gray-700);
+  }
 
-footer .copyright {
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--bs-gray-700);
-}
-
-.imprint,
-.data-pd {
-  text-align: left;
+  .imprint,
+  .data-pd {
+    text-align: left;
+  }
 }

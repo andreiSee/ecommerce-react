@@ -1,17 +1,16 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import products from '../../data/products-sneaker.json';
 import AddCartItem from './AddCartItem';
 
 function Products() {
   return (
     <>
-      <h2>Produkte</h2>
-      <Row sm={1} md={2} lg={3}>
+      <h2>Sneaker</h2>
+      <div className="grid">
         {products &&
           products.map((product) => (
-            <Col className="g-4 mw-200" key={product.id}>
+            <Col className="g-col-12 g-col-md-6 g-col-xl-4" key={product.id}>
               <Card as="article" className="h-100">
                 <picture>
                   <source srcSet={`/${product.imgMobile} 400w`} />
@@ -32,7 +31,7 @@ function Products() {
               </Card>
             </Col>
           ))}
-      </Row>
+      </div>
     </>
   );
 }
