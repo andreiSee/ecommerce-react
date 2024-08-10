@@ -49,12 +49,16 @@ header {
 
 // Main
 main {
+  box-shadow: 6px 6px 20px 1px var(--bs-gray-600);
+
   .shopping-area {
     display: flex;
     flex-direction: column-reverse;
+
     @include media-breakpoint-up(lg) {
       display: grid;
       grid-template-columns: 0.7fr 0.3fr;
+
       @include media-breakpoint-up(xl) {
         grid-template-columns: 0.75fr 0.25fr;
       }

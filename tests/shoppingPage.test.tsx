@@ -5,7 +5,7 @@ import { screen } from '@testing-library/react';
 
 describe('Shopping Page', () => {
   it.each([
-    { headline: 'products', searchFor: /produkte/i },
+    { headline: 'sneaker', searchFor: /sneaker/i },
     { headline: 'cart', searchFor: /warenkorb/i },
   ])('should display the $headline section.', ({ searchFor }) => {
     renderWithProviders(<IndexPage />);
