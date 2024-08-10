@@ -44,7 +44,7 @@ describe('Cart', () => {
               price: 126,
               currency: '€',
               img: 'sneaker-1.webp',
-              imgMobile: 'sneaker-1-400x300.webp',
+              imgTeaser: 'sneaker-1-400x300.webp',
             },
           },
         ],

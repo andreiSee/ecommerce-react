@@ -5,6 +5,10 @@ body {
   overscroll-behavior: none;
 }
 
+h2 {
+  margin-bottom: $spacer * 1;
+}
+
 a {
   color: black;
 }
