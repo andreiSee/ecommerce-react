@@ -13,9 +13,6 @@ const techStackList = [
 const Header = () => {
   return (
     <>
-      <div className="legal">
-        Produkte und Preise sind frei erfunden und können nicht bestellt werden.
-      </div>
       <Link to={'/'} className="text-decoration-none">
         <h1 className="mt-4 mb-4 text-center">
           <span className="text-black-50">Demo:</span> Warenkorb

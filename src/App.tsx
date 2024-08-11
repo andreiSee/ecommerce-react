@@ -9,6 +9,10 @@ function App({ children }: { children: React.ReactNode }) {
   return (
     <Container>
       <Row className="flex-column min-vh-100 gap-4">
+        <div className="legal">
+          Produkte und Preise sind frei erfunden und können nicht bestellt
+          werden.
+        </div>
         <Col as="header" className="flex-grow-0 pb-4">
           <Header />
         </Col>
