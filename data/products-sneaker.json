@@ -4,7 +4,7 @@
     "name": "Ocean Classic",
     "img": "img/products/sneakers/sneaker-1.webp",
     "imgTeaser": "img/products/sneakers/sneaker-1-400x300.webp",
-    "teaser": "Den Ozean immer zu Füßen! Tauche ein in den zeitlosen Stil des Ocean Classic. Du kennst keine Grenzen und bist frei.",
+    "teaser": "Den Ozean immer zu Füßen! Tauche ein in den zeitlosen Stil des Ocean Classic.",
     "price": 126,
     "currency": "€"
   },
@@ -13,7 +13,7 @@
     "name": "Ocean New",
     "img": "img/products/sneakers/sneaker-2.webp",
     "imgTeaser": "img/products/sneakers/sneaker-2-400x300.webp",
-    "teaser": "Selbstbewuswt und frisch, wie du!",
+    "teaser": "Selbstbewuswt und frisch, wie du! Du kennst keine Grenzen und bist frei.",
     "price": 112,
     "currency": "€"
   },
@@ -22,7 +22,7 @@
     "name": "Ocean Sparkling",
     "img": "img/products/sneakers/sneaker-3.webp",
     "imgTeaser": "img/products/sneakers/sneaker-3-400x300.webp",
-    "teaser": "Du bist der Glanz des Meeres. Der Ocean Sparkling kombiniert stilvolle Eleganz mit einem einzigartigen, leuchtenden Design, das jedes Outfit zum Strahlen bringt.",
+    "teaser": "Du bist der Glanz des Meeres. Der Ocean Sparkling hat die stilvolle Eleganz.",
     "price": 98,
     "currency": "€"
   },
@@ -31,7 +31,7 @@
     "name": "Vibrant Classic",
     "img": "img/products/sneakers/sneaker-4.webp",
     "imgTeaser": "img/products/sneakers/sneaker-4-400x300.webp",
-    "teaser": "Entfessle deine Energie mit dem Vibrant Sneaker. Dieser Schuh ist eine Hommage an die Lebendigkeit und Dynamik des modernen Lebens. Spüre die Energie, spüre den Vibrant.",
+    "teaser": "Entfessle deine Energie mit dem Vibrant Sneaker. Eine Hommage an die Lebendigkeit und Dynamik des modernen Lebens.",
     "price": 132,
     "currency": "€"
   },
