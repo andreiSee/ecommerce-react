@@ -11,7 +11,10 @@ function Products() {
         {products &&
           products.map((product) => (
             <Col className="g-col-12 g-col-md-6 g-col-xl-4" key={product.id}>
-              <Card as="article" className="h-100">
+              <Card as="article" className="h-100 position-relative">
+                <div className="price-label">
+                  {product.price} {product.currency}
+                </div>
                 <Card.Img
                   variant="top"
                   src={`/${product.imgTeaser}`}
@@ -19,9 +22,6 @@ function Products() {
                 />
                 <Card.Body>
                   <Card.Title as="h3">{product.name}</Card.Title>
-                  <div>
-                    {product.price} {product.currency}
-                  </div>
                   <Card.Text>{product.teaser}</Card.Text>
                   <AddCartItem product={product} />
                 </Card.Body>
