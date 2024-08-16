@@ -1,4 +1,4 @@
-import { useAppDispatch } from '../hooks';
+import { useAppDispatch } from '../hooks/useStore';
 import { addCartItem } from '../slices/cartSlice';
 import Button from 'react-bootstrap/Button';
 

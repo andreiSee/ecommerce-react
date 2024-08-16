@@ -1,4 +1,4 @@
-import { useAppSelector, useAppDispatch } from '../hooks';
+import { useAppSelector, useAppDispatch } from '../hooks/useStore';
 import { removeCartItem } from '../slices/cartSlice';
 import { Button, ListGroup } from 'react-bootstrap';
 import { RootState } from '../store';

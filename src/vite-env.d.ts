@@ -18,3 +18,8 @@ type CartItem = {
 type CartItemsState = {
   cartItems: CartItem[];
 };
+
+type ColorModeContextType = {
+  colorMode: string;
+  toggleColorMode: () => void;
+};
