@@ -18,7 +18,7 @@ function App({ children }: { children: React.ReactNode }) {
           <Col as="header" className="flex-grow-0 pb-4">
             <Header />
           </Col>
-          <Col as="main" className="text-center bg-light p-4 rounded-4">
+          <Col as="main" className="text-center p-4 rounded-4">
             {children}
           </Col>
           <Col

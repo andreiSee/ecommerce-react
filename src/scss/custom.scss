@@ -2,22 +2,32 @@
 @import 'bootstrap/scss/functions';
 
 // 2. Include any default variable overrides here
-@import './variables';
+@import './default-variables';
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/variables-dark';
+@import './variables';
+@import './variables-dark';
 
 // 4. Include any default map overrides here
+$theme-colors: map-merge($theme-colors, $custom-colors-light);
 
 // 5. Include remainder of required parts
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/root';
 
-// 6. a) Optionally include any other parts as needed
+// 6. Add custom colors to dark mode
+@if $enable-dark-mode {
+  @include color-mode(dark, true) {
+    @each $color, $value in $custom-colors-dark {
+      --#{$prefix}#{$color}: #{$value};
+    }
+  }
+}
+
+// 7. a) Optionally include any other parts as needed
 // https://getbootstrap.com/docs/5.3/customize/optimize/
-@import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/reboot';
 @import 'bootstrap/scss/type';
 @import 'bootstrap/scss/containers';
@@ -27,14 +37,14 @@
 @import 'bootstrap/scss/list-group';
 // ...
 
-// 6. b) Include the full import stack
+// 7. b) Include the full import stack
 // @import 'bootstrap/scss/bootstrap';
 
-// 7. Custom utility classes
+// 8. Custom utility classes
 @import './utilities.scss';
 
-// 8. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// 9. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import 'bootstrap/scss/utilities/api';
 
-// 9. Add additional custom code here
+// 10. Add additional custom code here
 @import './styles.scss';

@@ -9,7 +9,7 @@ h2 {
 }
 
 a {
-  color: black;
+  color: var(--bs-body-color);
 }
 
 .legal {
@@ -50,6 +50,7 @@ header {
 }
 
 main {
+  background-color: var(--bs-shoping-area-bg);
   box-shadow: 6px 6px 20px 1px var(--bs-gray-600);
 
   .shopping-area {
@@ -71,7 +72,7 @@ footer {
   .copyright {
     text-align: center;
     font-size: 0.75rem;
-    color: var(--bs-gray-700);
+    color: var(--bs-body-color);
   }
 
   .imprint,
@@ -87,7 +88,8 @@ footer {
   padding: 4px 6px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  background-color: var(--bs-gray-100);
+  color: var(--bs-card-color);
+  background-color: var(--bs-body-bg);
 }
 
 .showcase-header {

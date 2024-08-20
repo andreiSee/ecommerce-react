@@ -1,7 +1,5 @@
-// Custom css variables
+@import 'bootstrap/scss/variables';
 
-// Enable css grid
-$enable-grid-classes: false;
-$enable-cssgrid: true;
-
-// Custom scss variables
+$custom-colors-light: (
+  'shoping-area-bg': $gray-200,
+);
