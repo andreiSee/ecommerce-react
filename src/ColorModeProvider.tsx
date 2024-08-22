@@ -5,10 +5,11 @@ export const ColorModeContext = createContext<ColorModeContextType | null>(
 );
 
 function ColorModeProvider({ children }: { children: React.ReactNode }) {
+  const storedColorMode = localStorage.getItem('colorMode');
   const preColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
     : 'light';
-  const [colorMode, setColorMode] = useState(preColorMode);
+  const [colorMode, setColorMode] = useState(storedColorMode || preColorMode);
 
   const toggleColorMode = () => {
     const newColorMode = colorMode == 'light' ? 'dark' : 'light';
@@ -17,6 +18,7 @@ function ColorModeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-bs-theme', colorMode);
+    localStorage.setItem('colorMode', colorMode);
   }, [colorMode]);
 
   return (

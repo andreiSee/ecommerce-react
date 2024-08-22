@@ -9,12 +9,7 @@ const Header = () => {
   return (
     <header className="showcase-header">
       <h1>Sneaker Space</h1>
-      <a
-        // className="d-flex align-items-center"
-        title="toggle color mode"
-        href="#"
-        onClick={toggleColorMode}
-      >
+      <a title="Toggle color mode" href="#" onClick={toggleColorMode}>
         {colorMode === 'dark' && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
