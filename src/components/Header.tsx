@@ -19,7 +19,7 @@ const Header = () => {
       <div className="tech-stack">
         <h2 className="me-2 mb-0">Tech Stack</h2>
         <a
-          href="https://github.com/andreiSee/form-registration"
+          href="https://github.com/andreiSee/ecommerce-react"
           target="_blank"
           rel="noopener"
           title="Code on Github"
