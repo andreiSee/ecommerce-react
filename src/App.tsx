@@ -15,7 +15,7 @@ function App({ children }: { children: React.ReactNode }) {
             Produkte und Preise sind frei erfunden und können nicht bestellt
             werden.
           </div>
-          <Col as="header" className="flex-grow-0 pb-4">
+          <Col as="header" className="flex-grow-0 pb-5">
             <Header />
           </Col>
           <Col as="main" className="text-center p-4 rounded-4">

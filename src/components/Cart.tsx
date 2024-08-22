@@ -21,7 +21,7 @@ function Cart() {
       <h2>Warenkorb</h2>
       <CartItems />
       {cartSum !== 0 && (
-        <Container className="text-start p-3 bg-body-secondary rounded-2 mt-2">
+        <Container className="text-start p-3 bg-body rounded-2 mt-2">
           Summe: <span className="fw-bold">{cartSum} €</span>
         </Container>
       )}

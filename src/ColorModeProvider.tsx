@@ -1,23 +1,23 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 export const ColorModeContext = createContext<ColorModeContextType | null>(
   null
 );
 
 function ColorModeProvider({ children }: { children: React.ReactNode }) {
-  const rootColorMode = document.documentElement;
-  const [colorMode, setColorMode] = useState(
-    rootColorMode.getAttribute('data-bs-theme') || 'light'
-  );
-  const colorModeHtml = (colorMode: string) => {
-    rootColorMode.setAttribute('data-bs-theme', colorMode);
-  };
+  const preColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light';
+  const [colorMode, setColorMode] = useState(preColorMode);
 
   const toggleColorMode = () => {
     const newColorMode = colorMode == 'light' ? 'dark' : 'light';
     setColorMode(newColorMode);
-    colorModeHtml(newColorMode);
   };
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-bs-theme', colorMode);
+  }, [colorMode]);
 
   return (
     <ColorModeContext.Provider value={{ colorMode, toggleColorMode }}>
