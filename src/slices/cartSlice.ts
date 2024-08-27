@@ -8,7 +8,7 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    addCartItem: (state, action: PayloadAction<Product>) => {
+    addCartItem: (state, action: PayloadAction<SelectedProduct>) => {
       const currentCartItems = current(state.cartItems);
 
       // Only add product if not already in cart

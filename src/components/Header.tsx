@@ -43,7 +43,6 @@ const Header = () => {
                   size="sm"
                   href={item.url}
                   target="blank"
-                  rel="noopener"
                 >
                   {item.title}
                 </Button>

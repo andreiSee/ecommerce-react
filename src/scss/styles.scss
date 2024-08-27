@@ -100,3 +100,22 @@ footer {
   margin-bottom: $spacer * 2;
   border-bottom: 1px solid var(--bs-gray-500);
 }
+
+.size-popover {
+  background-color: var(--bs-body-bg);
+  padding: $spacer * 1;
+  border-radius: 4px;
+  border: solid 4px var(--bs-light-border-subtle);
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.size-button {
+  width: 100%;
+  border: 0;
+
+  &:hover:enabled {
+    background-color: var(--bs-dark-bg-subtle);
+  }
+}

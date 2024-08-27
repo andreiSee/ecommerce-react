@@ -1,6 +1,14 @@
 /// <reference types="vite/client" />
 
-type Product = {
+interface DisplayProduct extends Product {
+  size: ShoeSize;
+}
+
+interface SelectedProduct extends Product {
+  size: number;
+}
+
+interface Product {
   id: number;
   name: string;
   teaser: string;
@@ -8,11 +16,13 @@ type Product = {
   currency: string;
   img: string;
   imgTeaser: string;
-};
+}
+
+type ShoeSize = { number: number; inStock: boolean }[];
 
 type CartItem = {
   id: number;
-  details: Product;
+  details: SelectedProduct;
 };
 
 type CartItemsState = {

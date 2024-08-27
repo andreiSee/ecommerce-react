@@ -17,6 +17,7 @@ const CartItems = () => {
         >
           <div className="d-flex flex-column">
             <div className=" text-start">{cartItem.details.name}</div>
+            <div className=" text-start">Größe {cartItem.details.size}</div>
             <div className=" text-start">
               {cartItem.details.price} {cartItem.details.currency}
             </div>

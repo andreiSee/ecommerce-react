@@ -6,7 +6,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-1-400x300.webp",
     "teaser": "Den Ozean immer zu Füßen! Tauche ein in den zeitlosen Stil des Ocean Classic.",
     "price": 126,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": true },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": false },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": false },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 2,
@@ -15,7 +27,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-2-400x300.webp",
     "teaser": "Selbstbewuswt und frisch, wie du! Du kennst keine Grenzen und bist frei.",
     "price": 112,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": false },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": true },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": false },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 3,
@@ -24,7 +48,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-3-400x300.webp",
     "teaser": "Du bist der Glanz des Meeres. Der Ocean Sparkling hat die stilvolle Eleganz.",
     "price": 98,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": true },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": false },
+      { "number": 44, "inStock": true },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": false },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 4,
@@ -33,7 +69,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-4-400x300.webp",
     "teaser": "Entfessle deine Energie mit dem Vibrant Sneaker. Eine Hommage an die Lebendigkeit und Dynamik des modernen Lebens.",
     "price": 132,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": false },
+      { "number": 41, "inStock": true },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": true },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": false },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 5,
@@ -42,7 +90,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-5-400x300.webp",
     "teaser": "Der Lawn Sneaker bringt ein Gefühl von Ruhe und Erdung in deinen Alltag.",
     "price": 129,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": false },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": true },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": true },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 6,
@@ -51,7 +111,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-6-400x300.webp",
     "teaser": "Der Lawn Vibrant bringt die Energie der Natur in dein Leben.",
     "price": 114,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": false },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": false },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": true },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 7,
@@ -60,7 +132,19 @@
     "imgTeaser": "img/products/sneakers/sneaker-7-400x300.webp",
     "teaser": "Der Lawn Country bringt die Energie der Natur in dein Leben.",
     "price": 134,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": false },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": false },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": false },
+      { "number": 48, "inStock": true }
+    ]
   },
   {
     "id": 8,
@@ -69,6 +153,18 @@
     "imgTeaser": "img/products/sneakers/sneaker-8-400x300.webp",
     "teaser": "Der Lawn Smooth lässt dich schweben.",
     "price": 124,
-    "currency": "€"
+    "currency": "€",
+    "size": [
+      { "number": 39, "inStock": true },
+      { "number": 40, "inStock": true },
+      { "number": 41, "inStock": true },
+      { "number": 42, "inStock": true },
+      { "number": 43, "inStock": true },
+      { "number": 44, "inStock": true },
+      { "number": 45, "inStock": true },
+      { "number": 46, "inStock": true },
+      { "number": 47, "inStock": true },
+      { "number": 48, "inStock": true }
+    ]
   }
 ]
