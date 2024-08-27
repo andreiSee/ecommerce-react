@@ -16,13 +16,24 @@ describe('Cart', () => {
 
     const user = userEvent.setup();
 
-    const heading = screen.getByRole('heading', {
+    const card = screen.getByRole('heading', {
       level: 3,
       name: /ocean classic/i,
     }).parentNode;
-    const addToCartBtn = heading?.querySelector('button');
 
-    if (addToCartBtn) await user.click(addToCartBtn);
+    const actionBtns = card?.querySelectorAll('button');
+
+    if (actionBtns) {
+      const selectSizeBtn = actionBtns[0];
+      const addToCartBtn = actionBtns[1];
+      await user.click(selectSizeBtn);
+
+      const sizeBtns = card?.querySelectorAll('.size-button');
+      // screen.debug();
+      // screen.debug(test[0]);
+      if (sizeBtns && sizeBtns?.length > 0) await user.click(sizeBtns[0]);
+      await user.click(addToCartBtn);
+    }
 
     const cart = screen.getByTestId('cart');
     const cartItems = cart.querySelectorAll('li');
@@ -45,6 +56,7 @@ describe('Cart', () => {
               currency: '€',
               img: 'sneaker-1.webp',
               imgTeaser: 'sneaker-1-400x300.webp',
+              size: 42,
             },
           },
         ],
@@ -56,9 +68,6 @@ describe('Cart', () => {
     const cart = screen.getByTestId('cart');
     const cartItems = cart.querySelectorAll('li');
     const removeFromCartBtn = cartItems[0].querySelector('button');
-
-    // console.log('cart: ', cart);
-    // screen.debug(screen.getByTestId('cart'));
 
     expect(cartItems.length).toEqual(1);
     expect(cartItems[0]).toHaveTextContent(/ocean classic/i);
