@@ -1,8 +1,8 @@
 import Col from 'react-bootstrap/Col';
 import products from '../../data/products-sneaker.json';
-import ProductCard from './productCard/Card';
+import ProductCard from './productCard/ProductCard';
 
-function Products() {
+const Products = () => {
   return (
     <>
       <h2>Sneaker</h2>
@@ -16,6 +16,6 @@ function Products() {
       </div>
     </>
   );
-}
+};
 
 export default Products;

@@ -6,7 +6,9 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import ColorModeProvider from './ColorModeProvider';
 
-function App({ children }: { children: React.ReactNode }) {
+type Props = { children: React.ReactNode };
+
+const App = ({ children }: Props) => {
   return (
     <ColorModeProvider>
       <Container>
@@ -31,6 +33,6 @@ function App({ children }: { children: React.ReactNode }) {
       </Container>
     </ColorModeProvider>
   );
-}
+};
 
 export default App;

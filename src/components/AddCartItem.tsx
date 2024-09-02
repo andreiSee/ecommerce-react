@@ -2,13 +2,12 @@ import { useAppDispatch } from '../hooks/useStore';
 import { addCartItem } from '../slices/cartSlice';
 import Button from 'react-bootstrap/Button';
 
-const AddCartItem = ({
-  displayProduct,
-  selectedSize,
-}: {
+type Props = {
   displayProduct: DisplayProduct;
   selectedSize: number;
-}) => {
+};
+
+const AddCartItem = ({ displayProduct, selectedSize }: Props) => {
   const dispatch = useAppDispatch();
   const selectedProduct = { ...displayProduct, size: selectedSize };
 

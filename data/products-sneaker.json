@@ -7,7 +7,7 @@
     "teaser": "Den Ozean immer zu Füßen! Tauche ein in den zeitlosen Stil des Ocean Classic.",
     "price": 126,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": true },
@@ -28,7 +28,7 @@
     "teaser": "Selbstbewuswt und frisch, wie du! Du kennst keine Grenzen und bist frei.",
     "price": 112,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": false },
@@ -49,7 +49,7 @@
     "teaser": "Du bist der Glanz des Meeres. Der Ocean Sparkling hat die stilvolle Eleganz.",
     "price": 98,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": true },
@@ -70,7 +70,7 @@
     "teaser": "Entfessle deine Energie mit dem Vibrant Sneaker. Eine Hommage an die Lebendigkeit und Dynamik des modernen Lebens.",
     "price": 132,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": false },
       { "number": 41, "inStock": true },
@@ -91,7 +91,7 @@
     "teaser": "Der Lawn Sneaker bringt ein Gefühl von Ruhe und Erdung in deinen Alltag.",
     "price": 129,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": false },
@@ -112,7 +112,7 @@
     "teaser": "Der Lawn Vibrant bringt die Energie der Natur in dein Leben.",
     "price": 114,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": false },
@@ -133,7 +133,7 @@
     "teaser": "Der Lawn Country bringt die Energie der Natur in dein Leben.",
     "price": 134,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": false },
@@ -154,7 +154,7 @@
     "teaser": "Der Lawn Smooth lässt dich schweben.",
     "price": 124,
     "currency": "€",
-    "size": [
+    "sizes": [
       { "number": 39, "inStock": true },
       { "number": 40, "inStock": true },
       { "number": 41, "inStock": true },

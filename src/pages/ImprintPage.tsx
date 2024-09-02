@@ -7,6 +7,7 @@ const infoConti = conti(EmailTypes.Inf);
 
 const ImprintPage = () => {
   const [{ aContiP, dContiP }] = useState(infoConti);
+
   return (
     <App>
       <ScrollRestoration />

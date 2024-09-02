@@ -4,7 +4,7 @@ import { RootState } from '../store';
 import CartItems from './CartItems';
 import { Container } from 'react-bootstrap';
 
-function Cart() {
+const Cart = () => {
   const cartItems = useSelector((state: RootState) => state.cart.cartItems);
   const [cartSum, setCartSum] = useState(0);
 
@@ -28,6 +28,6 @@ function Cart() {
       {cartSum === 0 && <div>Der Warenkorb ist leer.</div>}
     </div>
   );
-}
+};
 
 export default Cart;

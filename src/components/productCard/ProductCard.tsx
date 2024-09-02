@@ -1,7 +1,9 @@
 import { Card } from 'react-bootstrap';
 import Actions from './Actions';
 
-function ProductCard({ displayProduct }: { displayProduct: DisplayProduct }) {
+type Props = { displayProduct: DisplayProduct };
+
+function ProductCard({ displayProduct }: Props) {
   return (
     <Card as="article" className="h-100 position-relative">
       <div className="price-label">

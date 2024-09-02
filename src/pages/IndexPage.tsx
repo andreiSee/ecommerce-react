@@ -3,7 +3,7 @@ import Cart from '../components/Cart';
 import Products from '../components/Products';
 import Header from '../components/showcase/Header';
 
-function IndexPage() {
+const IndexPage = () => {
   return (
     <App>
       <Header />
@@ -17,6 +17,6 @@ function IndexPage() {
       </div>
     </App>
   );
-}
+};
 
 export default IndexPage;

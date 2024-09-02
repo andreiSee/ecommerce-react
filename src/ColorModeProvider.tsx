@@ -4,7 +4,9 @@ export const ColorModeContext = createContext<ColorModeContextType | null>(
   null
 );
 
-function ColorModeProvider({ children }: { children: React.ReactNode }) {
+type Props = { children: React.ReactNode };
+
+const ColorModeProvider = ({ children }: Props) => {
   const storedColorMode = localStorage.getItem('colorMode');
   const preColorMode = window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
@@ -26,6 +28,6 @@ function ColorModeProvider({ children }: { children: React.ReactNode }) {
       {children}
     </ColorModeContext.Provider>
   );
-}
+};
 
 export default ColorModeProvider;

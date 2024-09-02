@@ -6,7 +6,7 @@ interface RouteError {
   message?: string;
 }
 
-export default function ErrorPage() {
+const ErrorPage = () => {
   const navigate = useNavigate();
   const error = useRouteError() as RouteError;
 
@@ -26,4 +26,6 @@ export default function ErrorPage() {
       </div>
     </App>
   );
-}
+};
+
+export default ErrorPage;

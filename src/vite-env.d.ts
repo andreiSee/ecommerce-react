@@ -1,7 +1,9 @@
 /// <reference types="vite/client" />
 
+type Dispatcher<T> = Dispatch<SetStateAction<T>>;
+
 interface DisplayProduct extends Product {
-  size: ShoeSize;
+  sizes: ShoeSize;
 }
 
 interface SelectedProduct extends Product {
