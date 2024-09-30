@@ -1,5 +1,5 @@
-import { useAppDispatch } from '../hooks/useStore';
-import { addCartItem } from '../slices/cartSlice';
+import { useAppDispatch } from '../../hooks/useStore';
+import { addCartItem } from '../../slices/cartSlice';
 import Button from 'react-bootstrap/Button';
 
 type Props = {
@@ -21,6 +21,7 @@ const AddCartItem = ({ displayProduct, selectedSize }: Props) => {
         variant="primary"
         onClick={() => addToCart(selectedProduct)}
         disabled={selectedProduct.size === 0 ? true : false}
+        className="product-card product-card__btn"
       >
         In den Warenkorb
       </Button>

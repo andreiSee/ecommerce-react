@@ -1,0 +1,5 @@
+.product-card__btn {
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+  }
+}

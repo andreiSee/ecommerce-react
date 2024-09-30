@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import AddCartItem from '../AddCartItem';
+import AddCartItem from './AddCartItem';
 import Sizes from './Sizes';
 
 type Props = { displayProduct: DisplayProduct };
@@ -21,10 +21,11 @@ const Actions = ({ displayProduct }: Props) => {
           />
         )}
       </div>
-      <div className="d-flex justify-content-between gap-0">
+      <div className="d-flex flex-wrap justify-content-between gap-2">
         <Button
           variant={size ? 'secondary' : 'primary'}
           onClick={() => setShowSizes(!showSizes)}
+          className="product-card product-card__btn"
         >
           Größe {size !== 0 && size}
         </Button>
