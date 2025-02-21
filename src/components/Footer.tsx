@@ -15,7 +15,9 @@ const Footer = () => {
         />
         <img alt="exali Siegel" src="/siegel_exali_72x80.png" />
       </div>
-      <p className="copyright">Copyright © 2024 – andreiSee</p>
+      <p className="copyright">
+        Copyright © {new Date().getFullYear()} – andreiSee
+      </p>
     </>
   );
 };
